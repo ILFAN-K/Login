@@ -4,8 +4,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 // Database credentials
 $servername = "localhost";
-$username = "root";    // Change to your DB username
-$password = "Ilfan@2006";        // Change to your DB password
+$username = "username";    // Change to your DB username
+$password = "password";        // Change to your DB password
 $dbname = "login"; // Change to your DB name
 
 // Create connection
@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
-    $user = $_POST['un'];
+    $user = $_POST['user'];
     $email = $_POST['mail'];
     $passw = $_POST['pass2'];
 
