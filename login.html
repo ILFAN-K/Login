@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="login" class="form-container active">
+            <div class="iimg"><img src="IMG/q50nfd29.png" alt="login">
+            </div>
+            <!-- <h1>LOGIN</h1> -->
+            <form action="login.php" method="POST">
+                <div class="inputf">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Username" name="uname" required>
+                </div>
+                <div class="inputf">
+                    <i class="fa-sharp fa-solid fa-unlock"></i>
+                    <input type="password" placeholder="Password" name="pass" required>
+                </div>
+                <p style="float: left; padding: 15px;">Don't have an account, <a
+                        onclick="toggleForm('register')">Register Here</a></p>
+                <button>LOGIN</button>
+            </form>
+        </div>
+        <div id="register" class="form-container">
+            <img src="IMG/reg7.png" alt="registration image" class="r1">
+            <form action="register.php" method="POST" onsubmit="return checki()">
+                <div class="inputf">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter the Username" name="un" required>
+                </div>
+
+                <div class="inputf">
+                    <i class="fa-duotone fa-solid fa-envelope-open-text"></i>
+                    <input type="email" placeholder="Enter the E-Mail" name="mail" required>
+                </div>
+
+                <div class="inputf">
+                    <i class="fa-sharp fa-solid fa-unlock"></i>
+                    <input type="password" placeholder="Enter the Password" id="pass1" required>
+                </div>
+
+                <div class="inputf">
+                    <i class="fa-duotone fa-solid fa-key"></i>
+                    <input type="password" placeholder="Re-enter the password" id="pass2" required>
+                </div>
+
+                <p>If you have an account, <a onclick="toggleForm('login')">Click Here</a></p>
+                <button>REGISTER</button>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="https://kit.fontawesome.com/19442bcfdb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

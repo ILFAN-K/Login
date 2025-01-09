@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgba(191, 234, 20, 0.536); */
+    background-image: url(IMG/logo\ bg.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.form-container{
+    /* background-color: rgba(205, 235, 246, 0.849); */
+    width: 370px;
+    background-color: aqua;
+    margin-left: 99vh;
+    margin-top: 9vh;
+    /* to center element horizondally and vertically
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    text-align: center;
+    border: 7px ridge rgba(8, 81, 172, 0.538);
+    border-radius: 15px;
+}
+.form-container h1{
+    padding: 30px;
+    
+}
+.form-container input{
+    margin: 13px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 15px;
+}
+.form-container input:focus{
+    border-bottom: 5px solid red;
+}
+button{
+    width: 120px;
+    height: 40px;
+    margin: 35px;
+    border-radius: 10px;
+    border: 3px solid blue;
+    background-color: blueviolet;
+    color: azure;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.form-container{
+    display: none;
+}
+.form-container.active{
+    display: block;
+}
+.form-container a{
+    color: blue;
+    cursor: pointer;
+}
+#login img{
+    width: 200px;
+}
+.iimg{
+    margin: 20px;
+    align-items: center;
+}
+.inputf .fa-solid{
+   padding-left: 10px;
+}
+.reg{
+    width: 150px;
+}
+.r1{
+    width: 130px;
+    height: 100px;
+}
